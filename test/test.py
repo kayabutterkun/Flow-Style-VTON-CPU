@@ -127,7 +127,7 @@ for epoch in range(1,2):
             combine = torch.cat([a[0],b[0], flow_color, c[0], d[0]], 2).squeeze()
             utils.save_image(
                combine,
-               os.path.join('./im_gar_flow_wg', data['p_name'][0]),
+               os.path.join(opt.output, data['p_name'][0]),
                nrow=int(1),
                normalize=True,
                range=(-1,1),

@@ -32,6 +32,8 @@ class BaseOptions():
         self.parser.add_argument('--tf_log', action='store_true', help='if specified, use tensorboard logging. Requires tensorflow installed')
 
         self.parser.add_argument('--test_pair', type=str, default='', help='path of text file which list pair of clothes and model for testing')
+        self.parser.add_argument('--output', type=str, default='', help='path of output file')
+        
 
         self.initialized = True
 
