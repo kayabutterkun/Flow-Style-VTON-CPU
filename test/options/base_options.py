@@ -31,6 +31,8 @@ class BaseOptions():
         self.parser.add_argument('--display_winsize', type=int, default=512,  help='display window size')
         self.parser.add_argument('--tf_log', action='store_true', help='if specified, use tensorboard logging. Requires tensorflow installed')
 
+        self.parser.add_argument('--test_pair', type=str, default='' help='path of text file which list pair of clothes and model for testing')
+
         self.initialized = True
 
     def parse(self, save=True):
