@@ -130,7 +130,7 @@ for epoch in range(1,2):
                os.path.join(opt.output, data['p_name'][0]),
                nrow=int(1),
                normalize=True,
-               range=(-1,1),
+               value_range=(-1,1),
             )
             
 
